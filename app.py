@@ -66,7 +66,7 @@ if st.button('Enviar valor analógico'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)   
     message =json.dumps({"Analog": float(values)})
-    ret= client1.publish("Boton", message)
+    ret= client1.publish("Luz", message)
     
  
 else:
